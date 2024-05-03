@@ -5,7 +5,8 @@ import requests
 
 # Function to fetch movie poster from TMDb API
 def fetch_poster(movie_id):
-    API_KEY = '1841b88ac1115b2ca3334950056976c2'
+    #Give your OpenAi key
+    API_KEY = ' '
     url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}&language=en-US'
     response = requests.get(url)
     if response.status_code == 200:
