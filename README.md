@@ -11,5 +11,14 @@ This project is a Movie Recommendation System built using Streamlit, a popular P
 - 
 You can install the dependencies using the following command:
 
+
+[![Streamlit](https://img.shields.io/badge/Streamlit-0.86.0-blue)](https://streamlit.io/)
+[![Python](https://img.shields.io/badge/Python-3.8-green)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-1.3.3-orange)](https://pandas.pydata.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-1.21.2-yellow)](https://numpy.org/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-2022-orange)](https://openai.com/)
+
+
+
 ```bash
 pip install -r requirements.txt
