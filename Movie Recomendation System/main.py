@@ -2,6 +2,18 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+movies_path = os.path.join(BASE_DIR, 'movies_dict.pkl')
+similarity_path = os.path.join(BASE_DIR, 'similarity.pkl')
+
+with open(movies_path, 'rb') as f:
+    movies = pickle.load(f)
+
+with open(similarity_path, 'rb') as f:
+    similarity = pickle.load(f)
+
 
 # Function to fetch movie poster from TMDb API
 def fetch_poster(movie_id):
