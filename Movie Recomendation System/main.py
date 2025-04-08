@@ -35,7 +35,12 @@ def recommended(movie):
     return recommended_movies
 
 # Load data
-movies_dict = pickle.load(open('movies_dict.pkl', 'rb'))
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(BASE_DIR, 'movies_dict.pkl'), 'rb') as f:
+    movies_dict = pickle.load(f)
+
 movies = pd.DataFrame(movies_dict)
 
 similarity = pickle.load(open('similarity.pkl', 'rb'))
